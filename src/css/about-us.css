@@ -1,0 +1,174 @@
+.about-us {
+  margin: 150px auto 60px;
+}
+
+.about-us__main-content {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.about-us__image-container {
+  border-radius: 75px;
+  width: 40%;
+  position: relative;
+}
+
+.about-us__small-block {
+  max-width: 120px;
+  width: 100%;
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #3E86F5;
+}
+
+.top-tb {
+  position: absolute;
+  top: 41px;
+  right: -48px;
+  z-index: 5;
+}
+
+.left-tb {
+  position: absolute;
+  top: 45%;
+  left: -48px;
+  z-index: 5;
+}
+
+.right-tb {
+  position: absolute;
+  bottom: 10%;
+  right: -48px;
+  z-index: 5;
+}
+
+.about-us__small-block span {
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 200;
+  color: black;
+}
+
+.about-us__text-container {
+  width: 50%;
+}
+
+.about-us__title {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.about-us__text {
+  font-size: 18px;
+  line-height: 200%;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 50%);
+  padding-bottom: 40px;
+}
+
+.about-btn {
+  color: white;
+  background-color: #3E86F5;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .about-us__main-content {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .about-us__image-container,
+  .about-us__text-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-us__image-container,
+  .about-us__text-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-us__title {
+    font-size: 40px;
+  }
+
+  .about-us {
+    margin: 90px auto 60px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .about-us__image-container,
+  .about-us__text-container {
+    width: 100%;
+  }
+
+  .about-us__image-container {
+    padding: 0 30px;
+  }
+
+  .about-us__main-content {
+    padding: 0 10px;
+  }
+
+  .about-us__small-block {
+    max-width: 90px;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .top-tb {
+    top: 41px;
+    right: -8px;
+  }
+
+  .left-tb {
+    top: 45%;
+    left: -8px;
+  }
+
+  .right-tb {
+    bottom: 10%;
+    right: -8px;
+  }
+
+  .about-us__small-block span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-us__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .about-us__text {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+
+  .about-us {
+    margin: 60px auto 60px;
+  }
+}

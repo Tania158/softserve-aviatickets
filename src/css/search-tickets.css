@@ -1,0 +1,212 @@
+.search-tickets {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  top: -150px;
+}
+
+.search-tickets__tabs-btns {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  height: 100px;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.search-tickets__tab-btn button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  border-radius: 25px;
+}
+
+.search-tickets__tab-btn .active {
+  background-color: rgba(61, 135, 245, 25%);
+}
+
+.search-tickets__form {
+  background-color: white;
+  border-radius: 0 50px 50px 50px;
+}
+
+.location-controls {
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 50px 5px;
+}
+
+.card-content {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+
+.destination-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(171, 171, 171, 50%);
+}
+
+.autocomplete,
+.datepicker {
+  height: 45px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #0000;
+}
+
+.input-field label {
+  color: rgb(0, 0, 0, 50%);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.route img {
+  max-width: 28px;
+}
+
+.datepicker-depart {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+}
+
+.card-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-action__btn {
+  padding: 15px 17px;
+  border-radius: 65px;
+}
+
+.send {
+  background-color: rgb(61, 135, 245, 80%);
+  color: white;
+}
+
+.cancel {
+  background-color: rgb(171, 171, 171, 50%);
+  color: white;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgb(61, 135, 245, 80%)!important;
+  box-shadow: 0 1px rgb(61, 135, 245, 80%)!important;
+}
+
+.datepicker-date-display {
+  color: white!important;
+  background-color: rgb(61, 135, 245, 80%)!important;
+}
+
+button:focus {
+  background-color: rgb(61, 135, 245, 80%) !important;
+}
+
+.datepicker-day-button:focus {
+  background-color: rgba(61, 135, 245, 0.294) !important;
+}
+
+.datepicker-table td.is-selected {
+  background-color: rgb(61, 135, 245, 80%) !important;
+}
+
+.datepicker-day-button {
+  color: #000000!important;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+  color: rgb(61, 135, 245, 80%) !important;
+}
+
+.datepicker-calendar-container {
+  padding: 20px 15px!important;
+}
+
+i.right {
+  margin-left: 0!important;
+}
+
+@media (max-width: 992px) {
+  .card-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .location-controls {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .destination-block {
+    flex-direction: column;
+  }
+
+  .location-controls {
+    padding: 30px 5px;
+  }
+
+  .search-tickets__tabs-btns {
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    justify-content: center;
+  }
+
+  .search-tickets__form {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .search-tickets {
+    top: 30px;
+  }
+}
